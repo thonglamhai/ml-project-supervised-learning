@@ -5,12 +5,32 @@
 ### Duration:
 Approximately 3 hours and 20 minutes.
 ### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+The project is to use the diabetes dataset from Kaggle to build a supervised learning model that can predict whether or not a person has high risk to the diabetes in the future.
+#### Project structure
+The project has two main files: `diabetes.csv` and the notebook `Supervised Learning-Project.ipynb`
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+#### The project process
+##### EDA
+- Descriptive statistic
+- Handling missing values
+- Handling duplicated values
+- Handling outliers
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+##### Scaling
+- Handling scaling data using Standard Scaler
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+##### Normalization
+- Handling normalized data using Min Max Scaler
+
+##### Handling imbalanced data
+- Checking if there is imbalance data in the dependent variable and handle it if it is necessary
+
+##### Feature selection
+
+##### build Model
+- Build model by LinearRegression
+- Build model by XGB
+- Build model by RandomForestRegressor
+
+##### Evaluation
+- Evaluation using mean squared error, auc-score and f1 score
